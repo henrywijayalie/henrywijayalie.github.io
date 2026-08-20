@@ -375,6 +375,32 @@
       </div>
     </section>
     <!-- Footer End -->
+    <button class="scroll-top-button" type="button" aria-label="Scroll to top" title="Scroll to top">
+      <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script>
+      const scrollTopButton = document.querySelector(".scroll-top-button");
+
+      window.addEventListener("scroll", () => {
+        scrollTopButton.classList.toggle("is-visible", window.scrollY > 400);
+      }, { passive: true });
+
+      scrollTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      const navbarCollapse = document.querySelector("#navbarNavAltMarkup");
+      const navbarToggler = document.querySelector(".navbar-toggler");
+      const navbarLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+      navbarLinks.forEach((navbarLink) => {
+        navbarLink.addEventListener("click", () => {
+          if (navbarCollapse.classList.contains("show")) {
+            navbarToggler.click();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
