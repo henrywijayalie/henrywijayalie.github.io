@@ -8,23 +8,26 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet" />
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
-    <title>Resume Online Henry Wijaya</title>
+    <title>Henry Wijaya Online Resume</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar">
       <div class="container">
-        <a class="navbar-brand" href="#">Henry Wijaya</a>
+        <a class="navbar-brand" href="#home">Henry Wijaya</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#Experiences">Experiences</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
             <a class="nav-link" href="#Skills">Skills</a>
+            <a class="nav-link" href="#Experiences">Experience</a>
             <a class="nav-link" href="#Contact">Contact</a>
           </div>
         </div>
@@ -32,135 +35,346 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center mt-5" id="home">
-      <img src="img/profile.jpeg" alt="Henry Wijaya" width="200" class="rounded-circle" />
-      <div class="ms-auto">
-        <h1 style="display: block">Henry Wijaya</h1>
-        <cite>Software Developer</cite><br />
-        <cite>Hire me!</cite>
+    <!-- Hero -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <span class="hero-kicker">Software Developer</span>
+            <h1 class="hero-title">Building modern applications that are fast, stable, and ready for production.</h1>
+            <p class="hero-summary mx-auto">I am Henry Wijaya, a developer focused on mobile app, web, and database-driven system development. For web front-end development, I also use ASP.NET with Bootstrap to keep applications clean, responsive, and easy to use.</p>
+            <div class="hero-actions d-flex flex-wrap justify-content-center gap-3">
+              <a href="#Contact" class="btn btn-primary btn-lg px-4">Contact Me</a>
+              <a href="#Experiences" class="btn btn-outline-light btn-lg px-4">View Experience</a>
+            </div>
+            <div class="hero-highlights row g-3 mt-4 justify-content-center">
+              <div class="col-sm-4">
+                <div class="highlight-card">
+                  <strong>Mobile</strong>
+                  <span>Flutter apps with responsive UI</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="highlight-card">
+                  <strong>Web Front End</strong>
+                  <span>ASP.NET with Bootstrap</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="highlight-card">
+                  <strong>Database</strong>
+                  <span>SQL Server, MySQL, PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,96L60,112C120,128,240,160,360,154.7C480,149,600,107,720,85.3C840,64,960,64,1080,74.7C1200,85,1320,107,1380,117.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-        ></path>
-      </svg>
     </section>
-    <!-- Jumbotron End -->
+    <!-- Hero End -->
+
+    <!-- About -->
+    <section class="about-section" id="About">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="about-card">
+              <div>
+                <span class="section-label">Professional Summary</span>
+                <h2>Turning business needs into applications that are usable and maintainable.</h2>
+              </div>
+              <p>I am experienced in front-end, back-end, and database work, which helps me build more connected development workflows. For web interfaces, I use ASP.NET with Bootstrap to deliver consistent, responsive, and user-friendly experiences across devices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
 
     <!-- Skills -->
-    <section id="Skills" class="pt-5" style="background-color: #ffffff">
+    <section id="Skills" class="skills-section section-space">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-5">
           <div class="col">
-            <h2>Skills</h2>
+            <span class="section-label">Skills</span>
+            <h2 class="section-title">Core technologies I use</h2>
           </div>
         </div>
-        <div class="row justify-content fs-5 text-center">
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima minus quasi itaque quibusdam nisi exercitationem soluta, eaque corrupti distinctio laudantium.</p>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-5 col-md-6">
+            <div class="skill-card h-100">
+              <div class="skill-icon"><i class="bi bi-code-slash"></i></div>
+              <h4>Programming</h4>
+              <p>Developing cross-platform applications, websites, and backend services with a structured code foundation, including ASP.NET and Bootstrap-based web front ends.</p>
+              <div class="skill-bars">
+                <div class="skill-bar-item">
+                  <div class="skill-bar-top"><span>Flutter</span><span>90</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-bar-item">
+                  <div class="skill-bar-top"><span>ASP.NET</span><span>88</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%"></div></div>
+                </div>
+                <div class="skill-bar-item">
+                  <div class="skill-bar-top"><span>ASP.NET Core</span><span>84</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 84%"></div></div>
+                </div>
+                <div class="skill-bar-item">
+                  <div class="skill-bar-top"><span>Bootstrap</span><span>86</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 86%"></div></div>
+                </div>
+                <div class="skill-bar-item">
+                  <div class="skill-bar-top"><span>PHP Native</span><span>78</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 78%"></div></div>
+                </div>
+                <div class="skill-bar-item">
+                  <div class="skill-bar-top"><span>C#</span><span>92</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 92%"></div></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, ut. Quisquam quod at fugiat totam?</p>
-          </div>
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ipsam quod atque.</p>
+          <div class="col-lg-5 col-md-6">
+            <div class="skill-card h-100">
+              <div class="skill-icon"><i class="bi bi-database"></i></div>
+              <h4>Database</h4>
+              <p>Designing and managing data storage for transactions, reporting, and application integration.</p>
+              <div class="skill-bars">
+                <div class="skill-bar-item">
+                  <div class="skill-bar-top"><span>SQL Server</span><span>91</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 91%"></div></div>
+                </div>
+                <div class="skill-bar-item">
+                  <div class="skill-bar-top"><span>MySQL</span><span>80</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-bar-item">
+                  <div class="skill-bar-top"><span>PostgreSQL</span><span>76</span></div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 76%"></div></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#f3f4f5"
-          fill-opacity="1"
-          d="M0,160L40,176C80,192,160,224,240,224C320,224,400,192,480,160C560,128,640,96,720,69.3C800,43,880,21,960,58.7C1040,96,1120,192,1200,229.3C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!-- Skills End -->
 
     <!-- Experiences -->
-    <section id="Experiences" class="pt-5" style="background-color: #f3f4f5">
+    <section id="Experiences" class="projects-section section-space">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-5">
           <div class="col">
-            <h2>Experiences</h2>
+            <span class="section-label">Experience</span>
+            <h2 class="section-title">Working Experience</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/1.jpg" alt="Project 1" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, omnis!</p>
+        <div class="experience-timeline">
+          <article class="experience-card experience-item">
+              <div class="experience-header">
+                <span class="experience-period">Jul 2021 - Present</span>
+                <h4>PT. Warna Bintang Kreasi</h4>
+                <p class="experience-role">Programmer</p>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/2.jpg" alt="Project 1" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, omnis!</p>
+              <div class="experience-meta">
+                <span>Flutter</span>
+                <span>C# Windows Form</span>
+                <span>ASP.NET</span>
+                <span>SQL Server</span>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/3.jpg" alt="Project 1" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, omnis!</p>
+              <ul class="experience-list">
+                <li>Built a mobile banking application using Flutter.</li>
+                <li>Built a mobile collection application using Flutter, connected to a thermal printer over Bluetooth.</li>
+                <li>Built the DHN Data Analyzer application using C# Windows Forms with the Levenshtein Distance method.</li>
+                <li>Built an HRIS system using ASP.NET.</li>
+              </ul>
+          </article>
+          <article class="experience-card experience-item">
+              <div class="experience-header">
+                <span class="experience-period">Feb 2020 - Jun 2021</span>
+                <h4>PT. Adicipta Carsani Ekakarya</h4>
+                <p class="experience-role">.NET Developer | Project: Asuransi Astra Buana</p>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/4.jpg" alt="Project 1" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, omnis!</p>
+              <div class="experience-meta">
+                <span>Visual Studio 2015</span>
+                <span>SQL Server Management Studio</span>
+                <span>a2is Framework</span>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/5.jpg" alt="Project 1" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, omnis!</p>
+              <ul class="experience-list">
+                <li>Change request to existing web application.</li>
+                <li>Create new function based on business needs.</li>
+              </ul>
+          </article>
+          <article class="experience-card experience-item">
+              <div class="experience-header">
+                <span class="experience-period">July 2018 - October 2019</span>
+                <h4>PT. Code Development Indonesia</h4>
+                <p class="experience-role">.NET Developer | Project: Mandiri Inhealth (PT. Asuransi Jiwa Inhealth Indonesia)</p>
               </div>
-            </div>
-          </div>
+              <div class="experience-meta">
+                <span>Visual Studio 2015</span>
+                <span>SQL Server Management Studio</span>
+                <span>SSRS</span>
+                <span>Foundation 4</span>
+              </div>
+              <ul class="experience-list">
+                <li>Change request to existing web application.</li>
+                <li>Create report using SSRS.</li>
+                <li>Create master data.</li>
+                <li>Migrating data to AWS Cloud from a binary form in the database to PDF.</li>
+              </ul>
+          </article>
+          <article class="experience-card experience-item">
+              <div class="experience-header">
+                <span class="experience-period">March 2018 - July 2018</span>
+                <h4>PT. ADI Consulting Indonesia</h4>
+                <p class="experience-role">.NET Developer | Outsourced via Accenture to PT. BUMA (Bukit Makmur Mandiri Utama)</p>
+              </div>
+              <div class="experience-meta">
+                <span>Visual Studio 2015</span>
+                <span>SQL Server Management Studio</span>
+                <span>Telerik Reporting</span>
+              </div>
+              <ul class="experience-list">
+                <li>Worked as an outsourced developer from PT. ADI Consulting Indonesia, assigned through Accenture to PT. BUMA (Bukit Makmur Mandiri Utama).</li>
+                <li>Applied change requests to the existing application.</li>
+                <li>Created reports using Telerik Reporting.</li>
+              </ul>
+          </article>
+          <article class="experience-card experience-item">
+              <div class="experience-header">
+                <span class="experience-period">October 2017 - March 2018</span>
+                <h4>PT. 360 Teknologi</h4>
+                <p class="experience-role">.NET Developer | Project: AXA Financial Indonesia</p>
+              </div>
+              <div class="experience-meta">
+                <span>Visual Studio 2013</span>
+                <span>SQL Server Management Studio</span>
+              </div>
+              <ul class="experience-list">
+                <li>Creating console application for CRM.</li>
+                <li>Develop e-statement web application.</li>
+              </ul>
+          </article>
+          <article class="experience-card experience-item">
+              <div class="experience-header">
+                <span class="experience-period">March 2016 - October 2017</span>
+                <h4>PT. Indocyber Global Teknologi</h4>
+                <p class="experience-role">.NET Developer</p>
+              </div>
+              <div class="experience-subproject">
+                <h5>June 2017 - October 2017 | On Site .NET Developer | Bank Sahabat Sampoerna</h5>
+                <ul class="experience-list">
+                  <li>Helping Bank Sahabat Sampoerna team fixing bug and doing change request based on business request data.</li>
+                  <li>Creating and enhancing SQL query.</li>
+                </ul>
+              </div>
+              <div class="experience-subproject">
+                <h5>March 2017 - June 2017 | .NET Developer | e-Learning at PT. Sunlife</h5>
+                <ul class="experience-list">
+                  <li>Create master account.</li>
+                  <li>Create master role.</li>
+                  <li>Create master role menu.</li>
+                  <li>Create master question and answer.</li>
+                </ul>
+              </div>
+              <div class="experience-subproject">
+                <h5>February 2017 - March 2017 | .NET Developer | CR CRIS at PT. HM Sampoerna</h5>
+                <ul class="experience-list">
+                  <li>Create master path for export XML file.</li>
+                  <li>Generate XML file to custom path in web directory and create folder if not exist.</li>
+                </ul>
+              </div>
+              <div class="experience-subproject">
+                <h5>February 2017 - March 2017 | .NET Developer | MDM at PT. HM Sampoerna</h5>
+                <ul class="experience-list">
+                  <li>Export data to Excel.</li>
+                  <li>Create master pages.</li>
+                </ul>
+              </div>
+              <div class="experience-subproject">
+                <h5>June 2016 - December 2016 | .NET Developer Junior | SLIK</h5>
+                <ul class="experience-list">
+                  <li>Create Irrevocable LC page, Agunan page, and Penjamin page.</li>
+                  <li>Create master pages and checker pages.</li>
+                </ul>
+              </div>
+              <div class="experience-subproject">
+                <h5>April 2016 - June 2016 | .NET Developer Junior | Starbridges</h5>
+                <ul class="experience-list">
+                  <li>Helping encryption and decryption for each ID in Starbridges.</li>
+                </ul>
+              </div>
+              <div class="experience-subproject">
+                <h5>March 2016 | .NET Bootcamp Employee</h5>
+                <div class="experience-meta">
+                  <span>Visual Studio 2013</span>
+                  <span>SQL Server Management Studio</span>
+                  <span>Telerik Reporting Tools</span>
+                </div>
+                <ul class="experience-list two-column-list">
+                  <li>C# Fundamental</li>
+                  <li>Develop web application C#</li>
+                  <li>ADO .NET</li>
+                  <li>LINQ</li>
+                  <li>MVC</li>
+                  <li>Entity Framework</li>
+                  <li>Web services</li>
+                  <li>Basic HTML + JavaScript</li>
+                  <li>T-SQL (SQL Statement + Function + Store Procedure)</li>
+                </ul>
+              </div>
+          </article>
+          <article class="experience-card experience-item">
+              <div class="experience-header">
+                <span class="experience-period">March 2014 - September 2014</span>
+                <h4>PT. Internusa Mandiri</h4>
+                <p class="experience-role">Web Designer Intern</p>
+              </div>
+              <div class="experience-meta">
+                <span>Adobe Dreamweaver</span>
+                <span>XAMPP</span>
+                <span>PHP Native</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
+              </div>
+              <ul class="experience-list">
+                <li>Built websites for each brand owned by the company.</li>
+              </ul>
+          </article>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,224L40,208C80,192,160,160,240,160C320,160,400,192,480,202.7C560,213,640,203,720,176C800,149,880,107,960,96C1040,85,1120,107,1200,106.7C1280,107,1360,85,1400,74.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!-- Experiences End -->
 
     <!-- Footer / Contact -->
-    <section id="Contact">
+    <section id="Contact" class="contact-section section-space">
       <div class="container">
-        <div class="row mb-4">
-          <h3>Contact Me</h3>
-          <div>
-            <i class="bi bi-whatsapp"> <a href="http://wa.me/6287777571863">+6287777571863</a></i>
-            <br />
-            <i class="bi bi-envelope"> <a href="mailto:henrywijaya92@gmail.com">henrywijaya92@gmail.com</a></i>
+        <div class="contact-card row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="section-label">Contact</span>
+            <h2 class="section-title text-start">Let's discuss your application needs.</h2>
+            <p class="contact-text">If you are looking for a developer to build or enhance mobile applications, ASP.NET websites with Bootstrap, or database-driven systems, I would be glad to discuss your needs.</p>
+          </div>
+          <div class="col-lg-5">
+            <div class="contact-links">
+              <a href="http://wa.me/6287777571863" class="contact-link"><i class="bi bi-whatsapp"></i><span>+62 877-7757-1863</span></a>
+              <a href="mailto:henrywijaya92@gmail.com" class="contact-link"><i class="bi bi-envelope"></i><span>henrywijaya92@gmail.com</span></a>
+              <a href="https://www.linkedin.com/in/henrywijayalie" class="contact-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i><span>linkedin.com/in/henrywijayalie</span></a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="Contact" class="bg-light">
-      <div class="container pt-2 pb-1">
-        <div class="row">
-          <p>
-            Created with <i class="bi bi-suit-heart-fill text-danger"></i> by <b>Henry Wijaya</b> <br />
-            All rights are reserved &copy; 2021
-          </p>
+    <section class="site-footer">
+      <div class="container py-4">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <p class="mb-0">Henry Wijaya | Online Resume</p>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <small>All rights reserved &copy; 2026</small>
+          </div>
         </div>
       </div>
     </section>
